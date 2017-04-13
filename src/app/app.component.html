@@ -1,3 +1,30 @@
 <h1>
   {{title}}
 </h1>
+
+    <div class="container">
+      <h1>Angular 2 + Google Maps Places Autocomplete</h1>
+      <div class="form-group">
+        <input placeholder="Ricerca" autocorrect="on" autocapitalize="off" spellcheck="off" type="text" class="form-control" #search [formControl]="searchControl">
+      </div>
+      <agm-map [latitude]="latitude" 
+               [longitude]="longitude" 
+               [scrollwheel]="true" 
+               [streetViewControl]="true" 
+               [mapTypeControl]="false" 
+               [scaleControl]="true" 
+               [zoom]="zoom">
+        <agm-marker [latitude]="latitude" 
+                    [longitude]="longitude" 
+                    [label]="'C'" 
+                    [title]="pippo" 
+                    [openInfoWindow]="true"></agm-marker>
+      <!--
+      </agm-map>
+      <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      -->
+      </agm-map>
+
+    </div>
+
