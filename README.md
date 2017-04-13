@@ -1,3 +1,18 @@
+# Note
+
+installare :
+
+npm install --save @types/googlemaps
+import {} from '@types/googlemaps';
+
+installare : 
+
+npm install @agm/core
+
+---
+
+https://github.com/SebastianM/angular-google-maps
+
 # Mappe
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
